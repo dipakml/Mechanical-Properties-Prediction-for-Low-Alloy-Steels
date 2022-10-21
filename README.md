@@ -47,13 +47,15 @@ Idea is to implement the end to end machine learning project while using free de
 
 Web application Snapshot:
 
-<img target="_blank" src="https://github.com/dipakml/Mechanical-Properties-Prediction-for-Low-Alloy-Steels/images/blob/master/webapp_snapshot.png" width=700>
+<img target="_blank" src="https://github.com/dipakml/Mechanical-Properties-Prediction-for-Low-Alloy-Steels/blob/master/images/webapp_snapshot.png" width=700>
 
 
 
 ### Steps in the project execution
 
-- Data gathering 
+<img target="_blank" src="https://github.com/dipakml/Mechanical-Properties-Prediction-for-Low-Alloy-Steels/blob/master/images/0_V0GyOt3LoDVfY7y5.png" width=700>
+
+- Data Collection 
 - Descriptive Analysis 
 - Data Visualizations 
 - Data Preprocessing 
