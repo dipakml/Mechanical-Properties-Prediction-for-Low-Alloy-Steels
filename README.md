@@ -1,5 +1,7 @@
 ## End-to-End Machine Learning Project- Mechanical Properties Prediction for Low Alloy Steels using Machine Learning
 
+<img target="_blank" src="https://github.com/dipakml/Mechanical-Properties-Prediction-for-Low-Alloy-Steels/blob/master/images/mech_img.png" width=1000>
+
 ### Table of Content
   * [Overview](#overview)
   * [Dataset Information](#dataset)
