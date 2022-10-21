@@ -1,0 +1,102 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jun 13 02:20:31 2020
+
+@author: Dipak Argade
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Created on #### ##:##:## 2022
+
+@Created by: Prismatic Webtech Services
+"""
+
+import numpy as np
+import pickle
+import pandas as pd
+import streamlit as st 
+from PIL import Image
+
+pickle_in = open("rfg.pkl","rb")
+rfg=pickle.load(pickle_in)  
+
+pickle_in = open("rfg_e.pkl","rb")
+rfg_e=pickle.load(pickle_in)  
+
+pickle_in = open("rfg_r.pkl","rb")
+rfg_r=pickle.load(pickle_in)  
+
+pickle_in = open("rfg_p.pkl","rb")
+rfg_p=pickle.load(pickle_in)  
+
+
+
+def main():
+    html_temp = """
+    <div style="background-color:tomato;padding:10px">
+    <h2 style="color:white;text-align:center;">Prediction of Mechanical properties of low alloy steels </h2>
+    </div>
+    """
+    header_container = st.container()    
+    with header_container:
+	# for example a logo or a image that looks like a website header
+        st.image('img1.jpg')
+        
+    st.markdown(html_temp,unsafe_allow_html=True)
+    
+    C = st.number_input("C")
+    Si = st.number_input("Si")
+    Mn = st.number_input("Mn")
+    P = st.number_input("P")
+    S = st.number_input("S")
+    Ni = st.number_input("Ni")
+    Cr = st.number_input("Cr")
+    Mo= st.number_input("Mo")
+    Cu= st.number_input("Cu")
+    V = st.number_input("V")
+    Al = st.number_input("Al")
+    N = st.number_input("N")
+    Ceq = st.number_input("Ceq")
+    Nb_Ta = st.number_input("Nb_Ta")
+    Temperature = st.number_input("Temperature")
+
+
+    result=""
+
+    if st.button('Predict 0.2% Proof Strength'):
+
+        result=rfg_p.predict([[C,Si,Mn,P,S,Ni,Cr,Mo,Cu,V,Al,N,Ceq,Nb_Ta,Temperature]])
+        st.title("Proof strength could be between " +
+             str(0.95*result)+"Mpa" + " to " + str(result*1.05)+"Mpa")
+
+    result=""
+
+    if st.button('Predict Tensile Strength'):
+
+        result=rfg.predict([[C,Si,Mn,P,S,Ni,Cr,Mo,Cu,V,Al,N,Ceq,Nb_Ta,Temperature]])
+        st.title("Predicted tensile strength is " +
+             str(result)+"Mpa")
+
+    result=""
+
+    if st.button('Predict Elongation'):
+
+        result=rfg_e.predict([[C,Si,Mn,P,S,Ni,Cr,Mo,Cu,V,Al,N,Ceq,Nb_Ta,Temperature]])
+        st.title("Predicted elongation is " +
+             str(result)+"Mpa")
+  
+    result=""
+
+    if st.button('Predict Reduction in Area'):
+
+        result=rfg_r.predict([[C,Si,Mn,P,S,Ni,Cr,Mo,Cu,V,Al,N,Ceq,Nb_Ta,Temperature]])
+        st.title("Predicted reduction in area is" +
+             str(result)+"Mpa")
+  
+  
+if __name__=='__main__':
+    main()
+    
+    
+    
