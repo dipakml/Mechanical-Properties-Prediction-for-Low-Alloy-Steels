@@ -1,13 +1,13 @@
 ## End-to-End Machine Learning Project- Mechanical Properties Prediction for Low Alloy Steels using Machine Learning
 
-<img target="_blank" src="https://github.com/dipakml/Mechanical-Properties-Prediction-for-Low-Alloy-Steels/blob/master/images/mech_img.png" width=1000>
+![](https://i.postimg.cc/4x7hqQS1/mech-img.png)
 
 ### Table of Content
   * [Overview](#overview)
-  * [Dataset Information](#dataset)
+  * [Dataset Information](#dataset-information)
   * [Motivation](#motivation)
   * [Demo](#demo)
-  * [Steps in the project execution](#Learning-Objective)
+  * [Steps in the project execution](#steps-in-the-project-execution)
   * [Technical Aspect](#technical-aspect)
   * [Technologies Used](#technologies-used)
   * [Installation](#installation)
@@ -32,7 +32,6 @@ We will develop a web based application in which we shall input the chemical com
 
 The dataset describes chemical composition of low carbon steel which mentions the content of C, Si, P, Mn, S etc and various operating temperatures & corresponding mechanical properties. 
 We have 15 independent variables & one target variable i.e. the mechanical property to predict.
-Dataset used in this project is taken from here : [Dataset] (https://mits.nims.go.jp/en/)
 
 
 ### Motivation
@@ -45,11 +44,10 @@ Idea is to implement the end to end machine learning project while using free de
 
 
 ### Demo
-[Visit this link for live demo]( https://mechpropspred7.herokuapp.com/)
 
 Web application Snapshot:
 
-<img target="_blank" src="https://github.com/dipakml/Mechanical-Properties-Prediction-for-Low-Alloy-Steels/blob/master/images/webapp_snapshot.png" width=700>
+![](https://i.postimg.cc/HsCyRMgG/webapp-snapshot.png)
 
 
 
